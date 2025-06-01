@@ -2,7 +2,7 @@
   import { theme } from '$lib/stores/theme';
 
   function toggleTheme() {
-    theme.update((t) => (t === 'dark' ? 'light' : 'dark'));
+    theme.update((t: any) => (t === 'dark' ? 'light' : 'dark'));
   }
 </script>
 
