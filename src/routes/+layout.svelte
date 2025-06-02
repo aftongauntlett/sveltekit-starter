@@ -1,5 +1,6 @@
 <script lang="ts">
   export let data: {
+    navLayout: 'top' | 'side';
     title?: string;
     description?: string;
   };
@@ -17,11 +18,25 @@
 </svelte:head>
 
 <div
-  class="min-h-screen flex flex-col bg-[hsl(var(--color-background))] text-[hsl(var(--color-text))] transition-colors duration-300 ease-in-out"
+  class="min-h-screen flex bg-[hsl(var(--color-background))] text-[hsl(var(--color-text))] transition-colors duration-300 ease-in-out"
 >
-  <Header />
-  <main class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-    <slot />
-  </main>
-  <Footer />
+  {#if data.navLayout === 'side'}
+    <aside class="w-64 p-4 border-r border-[hsl(var(--color-line))]">
+      <Header />
+    </aside>
+    <div class="flex flex-col flex-1">
+      <main class="flex-1 max-w-7xl mx-auto px-4 py-10">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  {:else}
+    <div class="flex flex-col w-full">
+      <Header />
+      <main class="flex-1 max-w-7xl mx-auto px-4 py-10">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  {/if}
 </div>
