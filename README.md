@@ -4,6 +4,7 @@
 ![SvelteKit](https://img.shields.io/badge/SvelteKit-%23ff3e00.svg?style=flat&logo=svelte&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Theme Sync](https://img.shields.io/badge/Theme-Sync%20Enabled-9f7aea?style=flat&logo=css3&logoColor=white)
 
 A clean, accessible SvelteKit starter template built with Tailwind CSS v4.1, HSL theming, and reusable component scaffolding. Designed for fast launches and long-term scalability across creative and professional projects.
 
@@ -41,12 +42,35 @@ npm run dev
 
 Visit `http://localhost:5173` in your browser to start building.
 
-## Theme Sync Scripts
+## Theme Sync System
 
-Color variables are defined in `color-preview.css` and synced to the theme system via script.
+This project uses a custom design workflow for managing HSL-based theming. Because HSL values aren't editable in the VSCode color picker, I maintain a `color-preview.css` file with HEX values (fully VSCode-compatible) and sync them to `theme.css` as HSL using a lightweight Node script.
 
-- `npm run watch-theme` — watches and auto-syncs `theme.css` on save
-- `npm run sync-theme` — manually updates HSL values from `color-preview.css`
+The sync runs automatically whenever the dev server is started:
+
+```bash
+npm run dev
+```
+
+Behind the scenes, this runs both the SvelteKit dev server **and** a file watcher that updates your `theme.css` whenever `color-preview.css` changes. This way, you can:
+
+- Use VSCode’s color picker to adjust HEX values in `color-preview.css`
+- Save the file to automatically update the real `theme.css` HSL values
+- Keep your entire app using consistent, modern HSL theming
+
+Manual sync (if needed):
+
+```bash
+npm run sync-theme
+```
+
+You can also run the watcher manually:
+
+```bash
+npm run watch-theme
+```
+
+This is a lightweight dev-time helper and does not affect production builds.
 
 ## Folder Structure (Relevant Parts)
 
