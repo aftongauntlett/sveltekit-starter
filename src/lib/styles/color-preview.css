@@ -1,0 +1,17 @@
+/* Local-only color swatch reference for VSCode color picker */
+
+:root {
+  /* ─── Light Mode ─────────────────────────────── */
+  --color-primary-light: #638967;
+  --color-secondary-light: #4eadca;
+  --color-background-light: #f0f0f0;
+  --color-text-light: #0c0c0c;
+  --color-muted-light: #6a6574;
+
+  /* ─── Dark Mode ─────────────────────────────── */
+  --color-primary-dark: #56fbda;
+  --color-secondary-dark: #4eadca;
+  --color-background-dark: #131313;
+  --color-text-dark: #fcfcfc;
+  --color-muted-dark: #6b7280;
+}
