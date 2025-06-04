@@ -10,15 +10,15 @@
 </section>
 
 <!-- About -->
-<Section id="about" heading="About">
+<Section id="about" heading="About" role="region">
   <p class="text-body">I'm a front-end developer with a strong background in UI/UX design...</p>
 </Section>
 
 <!-- Experience -->
-<Section id="experience" heading="Experience"></Section>
+<Section id="experience" heading="Experience" role="region"></Section>
 
 <!-- Projects -->
-<Section id="projects" heading="Projects">
+<Section id="projects" heading="Projects" role="region">
   <div class="grid gap-6 md:grid-cols-2">
     <ProjectCard title="Dataset Platform" description="A Kaggle-style site for sharing datasets." />
     <ProjectCard
@@ -29,7 +29,7 @@
 </Section>
 
 <!-- Contact -->
-<Section id="contact" heading="Contact">
+<Section id="contact" heading="Contact" role="region">
   <p class="muted">
     Let's connect — reach out via <a href="/contact" class="underline">my contact form</a>.
   </p>

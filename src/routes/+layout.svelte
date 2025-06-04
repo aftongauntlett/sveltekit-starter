@@ -21,7 +21,7 @@
   class="min-h-screen flex bg-[hsl(var(--color-background))] text-[hsl(var(--color-text))] transition-colors duration-300 ease-in-out"
 >
   {#if data.navLayout === 'side'}
-    <aside class="w-64 p-4 border-r border-[hsl(var(--color-line))]">
+    <aside class="w-64 p-4 border-r border-[hsl(var(--color-primary))]">
       <Header />
     </aside>
     <div class="flex flex-col flex-1">
