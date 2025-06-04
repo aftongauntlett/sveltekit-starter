@@ -5,8 +5,8 @@
 <div
   class="p-8 mx-auto max-w-xl rounded-2xl shadow-lg space-y-6 bg-[hsl(var(--color-background))] text-[hsl(var(--color-text))]"
 >
-  <header class="space-y-2">
-    <h1 class="hero-title text-primary">{name}</h1>
+  <header class="space-y-2" aria-labelledby="hero-heading">
+    <h1 id="hero-heading" class="hero-title text-primary">{heading}</h1>
     <p class="hero-subtitle">This is a hero-subtitle example with secondary color.</p>
   </header>
 
