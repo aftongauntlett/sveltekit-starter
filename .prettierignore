@@ -1,0 +1,19 @@
+# Output
+node_modules
+.svelte-kit
+build
+dist
+
+# Lockfiles and env
+.env
+.env.*
+package-lock.json
+
+# Editor
+.vscode/
+.DS_Store
+
+# Optional: config files Prettier can read, comment out if needed
+# postcss.config.cjs
+# tailwind.config.cjs
+# vite.config.ts

@@ -1,27 +1,27 @@
 node_modules
-
-# Output
-.output
-.vercel
-.netlify
-.wrangler
 /.svelte-kit
-/build
-
-# OS
 .DS_Store
 Thumbs.db
 
-# Env
+# Build outputs (customize if using adapter-static, etc.)
+/build
+/output
+
+# Env files
 .env
 .env.*
 !.env.example
 !.env.test
 
-# Formatting
-.eslintrc.cjs
-.prettierignore
+# Ignore local-only override files (optional)
+*.local.*
 
-# Vite
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
+# Deployment platforms (optional, only if used)
+# .vercel
+# .netlify
+# .wrangler
+
+# Editor artifacts
+*.swp
+*.swo
+*.log

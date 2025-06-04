@@ -77,7 +77,7 @@ This is a lightweight dev-time helper and does not affect production builds.
 ```
 src/
   lib/
-    components/
+    components/        # Reusable UI components
       HeroCard.svelte
       ProjectCard.svelte
       Section.svelte
