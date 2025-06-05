@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let name: string = 'hero-title';
+  export let heading: string;
 </script>
 
 <div

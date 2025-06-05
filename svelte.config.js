@@ -1,15 +1,12 @@
 import adapter from '@sveltejs/adapter-auto';
-import { preprocess } from 'svelte/compiler';
-import path from 'path';
+import preprocess from 'svelte-preprocess';
 
-/** @type {import('@sveltejs/kit').Config} */
 const config = {
   preprocess: preprocess(),
-
   kit: {
     adapter: adapter(),
     alias: {
-      $lib: path.resolve('./src/lib'),
+      $lib: './src/lib',
     },
   },
 };

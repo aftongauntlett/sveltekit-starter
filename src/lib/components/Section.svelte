@@ -1,7 +1,7 @@
 <script lang="ts">
-export let id: string;
-export let heading?: string;
-export let className?: string = '';
+  export let id: string;
+  export let heading: string;
+  export let className: string = '';
 </script>
 
 <section
