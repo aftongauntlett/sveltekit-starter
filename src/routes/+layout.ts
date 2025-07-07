@@ -1,3 +1,4 @@
+export const ssr = false; 
 export const load = () => {
   return {
     navLayout: 'top',
